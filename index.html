@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loader Animation</title>
+    <style>
+        @keyframes load {
+            100%{
+            background-size: 110%;
+            }
+        }
+        .loader {
+            margin: 40px;
+            width: 200px;
+            height: 20px;
+            border-radius: 20px;
+            background: linear-gradient(green 0 0)
+             0/0% no-repeat lightblue;
+             animation: load 15s infinite steps(5);
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Loader Animation</h1>
+    <div class="loader"></div>
+</body>
+</html>
